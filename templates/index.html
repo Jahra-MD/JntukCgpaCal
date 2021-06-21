@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+</head>
+<body>
+<!-- Image and text -->
+<nav class="navbar navbar-light" style="background-color: rgb(183, 111, 231);">
+    <a class="navbar-brand">
+      <img src="https://i.pinimg.com/originals/49/e6/f2/49e6f2458e550a4491ba470829dc2028.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy" style="margin-left: 10px; margin-top: 10px;">
+      R-19 
+    </a>
+  </nav>
+        
+      <h2 class="display-4 front-weight-bold white-text p-5 mb-2" style="color: #ff5722; text-align:center; font-size: 43px;"><strong>JNTUK 2-1 CGPA CALCULATOR</strong></h2>
+    
+      <div class="row">
+
+        <div class="column" style=" float: left;  width: 67%;
+        padding: 8px;" >
+          <form action="cal">
+              {% csrf_token %}
+              <div style="text-align: center;">
+              <label for="formGroupExampleInput">Enter MFCS points</label>
+              <input type="text" name='num1'><br><br>
+              </div>
+      
+              <div style="text-align: center; margin-left:22px;">
+                <label for="formGroupExampleInput">Enter SE points </label>
+                <input type="text" name='num2'><br><br>
+              </div>
+              
+              <div  style="text-align: center; margin-right:6px;">
+                <label for="formGroupExampleInput">Enter Python points </label>
+                <input type="text" name='num3'><br><br>
+              </div>
+      
+              <div  style="text-align: center; margin-left: 18px;">
+                <label for="formGroupExampleInput">Enter DS points </label>
+                <input type="text" name='num4'><br><br>
+              </div>
+      
+              <div  style="text-align: center; margin-left: 10px;">
+                <label for="formGroupExampleInput">Enter OOP points </label>
+                <input type="text" name='num5'><br><br>
+              </div>
+      
+              <div  style="text-align: center; margin-left:16px;">
+                <label for="formGroupExampleInput">Enter CO points </label>
+                <input type="text" name='num6'><br><br>
+              </div>
+      
+              <div  style="text-align: center; margin-right:30px;">
+                <label for="formGroupExampleInput">Enter Python Lab points </label>
+                <input type="text" name='num7'><br><br>
+              </div>
+      
+              <div  style="text-align: center; margin-right:8px;">
+                <label for="formGroupExampleInput">Enter DS Lab points </label>
+                <input type="text" name='num8'><br><br>
+              </div>
+      
+              <div style="text-align: center;">
+                     <input type="submit">
+              </div>
+            <div style="text-align: center;"><br>
+      
+      
+            {% block content %}
+      
+            {% endblock %}
+          </div>
+        </div>
+        <div class="column" style=" float: left;
+        padding-left: 10px;">
+        </form>
+        <div style="background-color:rgb(175, 241, 227);  border: 1px solid #020c02;">
+        <table class="table-dark">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Grades</th>
+              <th scope="col" style="padding-left: 50px;">points</th>
+            </tr>
+          </thead>         
+          <tbody>
+           
+            <tr>
+              <th scope="row">O</th>
+              <td style="padding-left: 50px;">10</td>
+            </tr>
+            <tr>
+              <th scope="row">S</th>
+              <td style="padding-left: 50px;">9</td>
+            </tr>
+            <tr>
+              <th scope="row">A</th>
+              <td style="padding-left: 50px;">8</td>
+            </tr>
+            <tr>
+              <th scope="row">B</th>
+              <td style="padding-left: 50px;">7</td>
+            </tr>
+            <tr>
+              <th scope="row">C</th>
+              <td style="padding-left: 50px;">6</td>
+            </tr>
+            <tr>
+              <th scope="row">D</th>
+              <td style="padding-left: 50px;">5</td>
+            </tr>
+            <tr>
+              <th scope="row">F</th>
+              <td style="padding-left: 50px;">0</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+        </div>
+        </div>
+      </div>
+      
+      </body>
+      </html>
+      
+
+ 
